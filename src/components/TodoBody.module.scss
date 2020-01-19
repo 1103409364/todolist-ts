@@ -1,0 +1,58 @@
+.todo-body {
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+  ul {
+    margin: 0;
+    padding: 0 30px;
+    font-size: 15px;
+    .item {
+      position: relative;
+      box-sizing: border-box;
+      padding: 5px 10px 5px 10px;
+      margin-bottom: 5px;
+      width: 100%;
+      list-style: none;
+      line-height: 1.5;
+      background-color: #fff7d1;
+      &.complete {
+        background-color: #eee;
+        .content {
+          color: #888585;
+          text-decoration: line-through;
+        }
+      }
+      .time {
+        font-size: 12px;
+        color: #888585;
+      }
+      .content {
+        white-space: normal;
+        overflow: hidden;
+        white-space: normal;
+        word-break: break-all;
+        text-overflow: ellipsis;
+      }
+      .btn-wrap {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 78px;
+        button {
+          border: none;
+          background-color: transparent;
+          outline: none;
+        }
+        .del-btn {
+          color: red;
+        }
+        .complete-btn {
+          color: #337ab7;
+        }
+      }
+    }
+    // li:nth-of-type(odd) {
+    //   background-color: #eee;
+    // }
+  }
+}

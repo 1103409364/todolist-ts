@@ -1,0 +1,12 @@
+.footer-wrap {
+  width: 100%;
+  display: flex;
+  .tab {
+    flex: 1;
+    text-align: center;
+    line-height: 40px;
+  }
+  .active {
+    color: #337ab7;
+  }
+}
